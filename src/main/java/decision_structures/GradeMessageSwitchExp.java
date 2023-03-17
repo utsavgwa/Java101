@@ -16,7 +16,11 @@ public class GradeMessageSwitchExp {
             case "C"->"It's OK, there's scope for improvement";
             case "D"->"You need to work harder, take it seriously";
             case "F"->"Uh Oh! You have not passed the minimum threshold";
-            default-> "Error, Invalid Grade";
+            // to print out several lines
+            default-> {
+                System.out.println("Error, Invalid Grade");;
+                yield "Try something new";
+            }
         };
         System.out.println(message);
     }
